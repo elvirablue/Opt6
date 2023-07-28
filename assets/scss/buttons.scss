@@ -1,0 +1,87 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    height: var(--action-height);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--surface-color);
+    background-color: var(--light-primary-color);
+    background-image: none;
+    border-radius: var(--root-radius);
+    transition:
+            background-color 0.1s ease-in-out,
+            color 0.1s ease-in-out,
+            opacity 0.1s ease-in-out,
+            border-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--primary-color);
+        svg {
+            color: currentColor;
+        }
+    }
+
+    &:disabled, &.-disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    img, .svg {
+        margin-left: -5px;
+
+        + span, + span + span {
+            padding-left: 7px;
+        }
+    }
+
+    .svg {
+        color: var(--primary-color);
+        transition: color 0.1s ease-in-out;
+    }
+
+    &.-icon {
+        flex-shrink: 0;
+        height: auto;
+        width: auto;
+        padding: 0;
+        color: var(--lighther-primary-color);
+        background: none;
+
+        &:hover, &.-active {
+            color: var(--primary-color);
+        }
+
+        svg {
+            color: currentColor;
+            margin: 0 !important;
+        }
+    }
+
+    &.-text {
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+        white-space: nowrap;
+        background: none;
+
+        svg {
+            margin-left: 10px;
+            margin-bottom: 2px;
+        }
+
+        &.-red {
+            color: var(--error-color);
+        }
+    }
+
+    &.-small {
+        font-size: 14px;
+    }
+}

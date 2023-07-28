@@ -1,37 +1,9 @@
 @import "normalize.css";
+@import "stylesheet";
+@import "variables";
+@import "mixins";
 @import "general";
-
-.app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1400px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 40px 80px;
-}
-
-.container {
-    flex: 1 0 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    grid-gap: 40px;
-    height: 100%;
-
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 40px;
-    border: 1px solid darkblue;
-    border-radius: 20px;
-}
-
-.color-red {
-    color: red;
-    font-weight: 600;
-}
+@import "helpers";
+@import "buttons";
+@import "v-popper";
+@import "draggable";

@@ -1,0 +1,33 @@
+.sortable-chosen {
+    &.sortable-drag {
+        //opacity: 0.7 !important;
+        border-radius: var(--root-radius);
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    &.sortable-ghost {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        border-radius: var(--root-radius);
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            border-radius: var(--root-radius);
+            background-color: var(--main-background);
+            border: 2px dashed var(--lighther-primary-color);
+        }
+
+        > * {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
