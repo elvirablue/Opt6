@@ -1,8 +1,32 @@
 {
-  "NuxtLogo": {
-    "description": "Auto imported from components/NuxtLogo.vue"
+  "AtomsTabs": {
+    "description": "Auto imported from components/atoms/tabs.vue"
   },
-  "Tutorial": {
-    "description": "Auto imported from components/Tutorial.vue"
+  "AtomsBaseDropdown": {
+    "description": "Auto imported from components/atoms/base/dropdown.vue"
+  },
+  "AtomsBaseIcon": {
+    "description": "Auto imported from components/atoms/base/icon.vue"
+  },
+  "AtomsBaseInput": {
+    "description": "Auto imported from components/atoms/base/input.vue"
+  },
+  "AtomsTableDesktop": {
+    "description": "Auto imported from components/atoms/table/desktop.vue"
+  },
+  "AtomsTableMobile": {
+    "description": "Auto imported from components/atoms/table/mobile.vue"
+  },
+  "MoleculesMaintenanceTablesSettings": {
+    "description": "Auto imported from components/molecules/maintenance/tables/settings.vue"
+  },
+  "MoleculesMaintenanceTablesWriteOffItem": {
+    "description": "Auto imported from components/molecules/maintenance/tables/write-off-item.vue"
+  },
+  "OrganismsAside": {
+    "description": "Auto imported from components/organisms/aside.vue"
+  },
+  "OrganismsMaintenanceWriteOffItem": {
+    "description": "Auto imported from components/organisms/maintenance/write-off-item.vue"
   }
 }
